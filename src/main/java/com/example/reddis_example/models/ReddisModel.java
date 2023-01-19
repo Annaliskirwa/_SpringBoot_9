@@ -18,7 +18,7 @@ public class ReddisModel {
     @Column(name="TRANSACTION_REFERENCE")
     private String transactionReference;
     @Column(name = "NOTIFICATION_TYPE")
-    private String noficationType;
+    private String notificationType;
     @Column(name = "MESSAGE")
     private String message;
 }
