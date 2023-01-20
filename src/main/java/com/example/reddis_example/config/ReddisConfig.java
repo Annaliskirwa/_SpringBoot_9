@@ -39,7 +39,7 @@ public class ReddisConfig {
     }
 
     //    Redis pub sub configuration
-    @Bean
+//    @Bean
     MessageListenerAdapter messageListener() {
         return new MessageListenerAdapter(new RedisMessageSubscriber());
     }

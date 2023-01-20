@@ -29,6 +29,7 @@ public class ReddisServiceImpl implements ReddisService {
 //        Reddis sending and receiving the messages
         Gson gson = new Gson();
         String message = gson.toJson(redisModel);
+        log.info("The message is {}", message);
         redisMessagePublisher.publish(message);
         return ResponseEntity.ok(redisModel);
     }
